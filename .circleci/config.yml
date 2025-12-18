@@ -25,7 +25,7 @@ jobs:
               --environment-name="<environment-name>" \
               --component-name="<component-name>" \
               --target-version="<some-version-name>"
-              "echo Hello, World!"
+              && echo "Hello, World!"
       - run:
           name: Update a deploy to SUCCESS
           command: circleci run release update --status=SUCCESS 
